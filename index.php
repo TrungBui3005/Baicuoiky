@@ -15,9 +15,6 @@
                     <a href="#" class="btn btn-custom btn-outline-light">Tìm Hiểu Về CLB</a>
                 </div>
             </div>
-            <div class="col-lg-5 d-none d-lg-block">
-                <img src="https://cdni.iconscout.com/illustration/premium/thumb/student-club-illustration-download-in-svg-png-gif-file-formats--groups-communities-activities-community-pack-people-illustrations-5373307.png" alt="CLB Illustration" class="img-fluid animate__animated animate__fadeInRight">
-            </div>
         </div>
     </div>
 </section>
@@ -33,24 +30,28 @@
         <div class="row g-4">
             <!-- 1. Thành viên -->
             <div class="col-lg-4 col-md-6">
-                <div class="module-card">
-                    <div class="module-icon">
-                        <i class="bi bi-people-fill"></i>
+                <a href="danhsach_thanhvien.php" class="text-decoration-none text-dark">
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Thành Viên CLB</h4>
+                        <p class="text-muted small">Quản lý danh sách, hồ sơ và phân loại chức vụ thành viên một cách khoa học.</p>
                     </div>
-                    <h4>Thành Viên CLB</h4>
-                    <p class="text-muted small">Quản lý danh sách, hồ sơ và phân loại chức vụ thành viên một cách khoa học.</p>
-                </div>
+                </a>
             </div>
 
             <!-- 2. Sự kiện -->
             <div class="col-lg-4 col-md-6">
-                <div class="module-card">
-                    <div class="module-icon">
-                        <i class="bi bi-calendar-event-fill"></i>
+                <a href="danhsach_sukien.php" class="text-decoration-none text-dark">
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="bi bi-calendar-event-fill"></i>
+                        </div>
+                        <h4>Sự Kiện CLB</h4>
+                        <p class="text-muted small">Lên kế hoạch, quản lý địa điểm và nội dung các chương trình sắp diễn ra.</p>
                     </div>
-                    <h4>Sự Kiện CLB</h4>
-                    <p class="text-muted small">Lên kế hoạch, quản lý địa điểm và nội dung các chương trình sắp diễn ra.</p>
-                </div>
+                </a>
             </div>
 
             <!-- 3. Đăng ký -->

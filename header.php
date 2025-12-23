@@ -30,7 +30,7 @@
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link active" href="index.php">Trang chủ</a></li>
                 <li class="nav-item"><a class="nav-link" href="danhsach_thanhvien.php">Thành viên</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sự kiện</a></li>
+                <li class="nav-item"><a class="nav-link" href="danhsach_sukien.php">Sự kiện</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Đăng ký</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
             </ul>
