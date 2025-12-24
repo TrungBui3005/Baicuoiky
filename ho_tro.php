@@ -15,6 +15,9 @@
                 <hr>
                 <p class="text-muted small">* Vui lòng đính kèm ảnh chụp màn hình lỗi để được xử lý nhanh nhất.</p>
             </div>
+            <div class="text-center mt-5">
+                <a href="index.php" class="btn btn-outline-primary px-4 py-2">Quay lại Trang chủ</a>
+            </div>
         </div>
     </div>
 </div>
