@@ -64,7 +64,7 @@
             </div>
             <!-- 4. Tin tức -->
             <div class="col-lg-4 col-md-6">
-                <a href="#" class="text-decoration-none text-dark">
+                <a href="danhsach_tintuc.php" class="text-decoration-none text-dark">
                     <div class="module-card">
                         <div class="module-icon">
                             <i class="bi bi-newspaper"></i>

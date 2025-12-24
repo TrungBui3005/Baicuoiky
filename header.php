@@ -37,7 +37,7 @@
                     <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'danhsachdki.php' ? 'active' : '' ?>" href="danhsachdki.php">Đăng ký</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tin tức</a>
+                    <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'danhsach_tintuc.php' ? 'active' : '' ?>" href="danhsach_tintuc.php">Tin tức</a>
                 </li>
             </ul>
             
