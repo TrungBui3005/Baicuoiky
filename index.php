@@ -12,7 +12,6 @@
                 <p class="mb-5">Nền tảng giúp tối ưu hóa việc quản lý thành viên, tổ chức sự kiện và gắn kết cộng đồng sinh viên năng động.</p>
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                     <a href="#modules" class="btn btn-custom btn-primary-custom shadow-lg">Khám Phá Các Chức Năng</a>
-                    <a href="#" class="btn btn-custom btn-outline-light">Tìm Hiểu Về CLB</a>
                 </div>
             </div>
         </div>
