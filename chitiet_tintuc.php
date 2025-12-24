@@ -24,36 +24,33 @@ $row = $result->fetch_assoc();
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="danhsach_tintuc.php">Tin tức</a></li>
+                    <li class="breadcrumb-item active">Chi tiết</li>
+                </ol>
+            </nav>
 
-            <!-- Tiêu đề -->
-            <h1 class="fw-bold mb-3">
-                <?= htmlspecialchars($row['tieu_de']) ?>
-            </h1>
+            <h1 class="fw-bold mb-3"><?= htmlspecialchars($row['tieu_de']) ?></h1>
 
-            <!-- Meta -->
             <div class="text-muted mb-4">
-                📍 <?= htmlspecialchars($row['dia_diem']) ?>
-                &nbsp;&nbsp;|&nbsp;&nbsp;
-                🗓 <?= date('d/m/Y', strtotime($row['ngay_dang'])) ?>
+                <span class="me-3">📍 <?= htmlspecialchars($row['dia_diem']) ?></span>
+                <span>🗓 <?= date('d/m/Y', strtotime($row['ngay_dang'])) ?></span>
             </div>
 
-            <!-- Ảnh -->
-            <img src="/Baicuoiky-master/<?= htmlspecialchars($row['hinh_anh']) ?>"
-                 class="img-fluid rounded mb-4"
-                 style="max-height:420px; object-fit:cover; width:100%;">
+            <img src="<?= htmlspecialchars($row['hinh_anh']) ?>" 
+                 class="img-fluid rounded mb-4 shadow-sm" 
+                 style="max-height:500px; width:100%; object-fit:cover;">
 
-            <!-- Nội dung -->
-            <div style="font-size:1.05rem; line-height:1.8;">
+            <div class="content-text" style="font-size:1.1rem; line-height:1.8; text-align: justify;">
                 <?= nl2br(htmlspecialchars($row['noi_dung'])) ?>
             </div>
 
-            <!-- Quay lại -->
-            <div class="mt-5">
+            <div class="mt-5 pt-4 border-top">
                 <a href="danhsach_tintuc.php" class="btn btn-outline-secondary">
-                    ← Quay lại danh sách tin
+                    <i class="bi bi-arrow-left"></i> Quay lại danh sách
                 </a>
             </div>
-
         </div>
     </div>
 </div>

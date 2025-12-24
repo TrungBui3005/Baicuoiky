@@ -7,9 +7,9 @@ if (isset($_POST['submit'])) {
     $noi_dung = $_POST['noi_dung'];
     $dia_diem = $_POST['dia_diem'];
     $ngay_dang = date('Y-m-d H:i:s');
-
-    $hinh_anh = $_FILES['hinh_anh']['name'];
-    move_uploaded_file($_FILES['hinh_anh']['tmp_name'], "uploads/$hinh_anh");
+    
+    // Thay đổi: Nhận link URL thay vì file upload
+    $hinh_anh = $_POST['hinh_anh'];
 
     $sql = "INSERT INTO tintuc (tieu_de, hinh_anh, noi_dung, ngay_dang, dia_diem)
             VALUES ('$tieu_de', '$hinh_anh', '$noi_dung', '$ngay_dang', '$dia_diem')";
@@ -27,37 +27,33 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div class="card-body p-4">
-                <form method="post" enctype="multipart/form-data">
-                    
-                    <div class="mb-3">
+                <form method="post"> <div class="mb-3">
                         <label class="form-label fw-semibold">Tiêu đề tin</label>
-                        <input type="text" name="tieu_de" class="form-control" required>
+                        <input type="text" name="tieu_de" class="form-control" placeholder="Nhập tiêu đề..." required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Địa điểm</label>
-                        <input type="text" name="dia_diem" class="form-control" required>
+                        <input type="text" name="dia_diem" class="form-control" placeholder="Ví dụ: Hội trường A" required>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label fw-semibold">Ảnh đại diện</label>
-                        <input type="file" name="hinh_anh" class="form-control" required>
+                        <label class="form-label fw-semibold">Link ảnh đại diện (URL)</label>
+                        <input type="url" name="hinh_anh" class="form-control" placeholder="Dán link ảnh từ internet vào đây..." required>
+                        <small class="text-muted">Ví dụ: https://example.com/anh.jpg</small>
                     </div>
 
                     <div class="mb-4">
                         <label class="form-label fw-semibold">Nội dung</label>
-                        <textarea name="noi_dung" rows="6" class="form-control" required></textarea>
+                        <textarea name="noi_dung" rows="6" class="form-control" placeholder="Nội dung bài viết..." required></textarea>
                     </div>
 
                     <div class="d-flex justify-content-between">
-                        <a href="danhsach_tintuc.php" class="btn btn-secondary">
-                            ← Quay lại
-                        </a>
+                        <a href="danhsach_tintuc.php" class="btn btn-secondary">← Quay lại</a>
                         <button name="submit" class="btn btn-primary px-4">
                             <i class="bi bi-check-circle"></i> Đăng tin
                         </button>
                     </div>
-
                 </form>
             </div>
         </div>
