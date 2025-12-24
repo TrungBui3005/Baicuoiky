@@ -1,4 +1,3 @@
-//<!-- Script xử lý chung (Ví dụ: Active Menu) -->
 document.addEventListener('DOMContentLoaded', function() {
 // Tự động nhận diện trang hiện tại để active menu
     const currentLocation = location.href;
