@@ -12,6 +12,12 @@ include 'header.php';
         <a href="them_sukien.php" class="btn btn-primary rounded-pill px-4 shadow-sm">
             <i class="bi bi-plus-lg me-2"></i>Thêm Mới
         </a>
+        
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+            <a href="them_sukien.php" class="btn btn-primary rounded-pill px-4 shadow-sm">
+                <i class="bi bi-plus-lg me-2"></i>Thêm Mới
+            </a>
+        <?php endif; ?>
     </div>
 
     <div class="row g-4">
@@ -44,6 +50,20 @@ include 'header.php';
                                     <i class="bi bi-pencil"></i></a>
                                     <a href="xoa_sukien.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger border-0" onclick="return confirm('Xóa sự kiện này?')">
                                     <i class="bi bi-trash"></i></a>
+                                
+                                <div class="btn-group">
+                                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+                                        <a href="sua_sukien.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-warning border-0" title="Sửa">
+                                            <i class="bi bi-pencil"></i>
+                                        </a>
+                                        <a href="xoa_sukien.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger border-0" onclick="return confirm('Xóa sự kiện này?')" title="Xóa">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                    <?php else: ?>
+                                        <a href="chitiet_sukien.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-primary border-0" title="Xem chi tiết">
+                                            <i class="bi bi-eye"></i> Xem
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

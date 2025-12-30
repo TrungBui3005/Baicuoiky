@@ -1,4 +1,6 @@
 <?php include 'header.php'; ?>
+<!-- Chinh_sach Css -->
+<link href="css/chinh_sach.css" rel="stylesheet">
 
 <div class="bg-light py-5 mb-5 border-bottom">
     <div class="container text-center">
@@ -26,6 +28,14 @@
                             </button>
                         </h2>
                         <div id="sec2-1" class="accordion-collapse collapse show" data-bs-parent="#policyAccordion">
+                <div class="accordion shadow-sm" id="policyAccordion">                   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button">
+                                2.1. Thu thập thông tin cá nhân
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse">
                             <div class="accordion-body">
                                 Hệ thống chỉ thu thập các thông tin cơ bản bao gồm: Họ tên, MSSV, Email, Số điện thoại và Khoa/Viện để phục vụ việc định danh thành viên và liên lạc khi cần thiết.
                             </div>
@@ -38,6 +48,11 @@
                             </button>
                         </h2>
                         <div id="sec2-2" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                            <button class="accordion-button collapsed" type="button">
+                                2.2. Mục đích sử dụng thông tin
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse">
                             <div class="accordion-body">
                                 Thông tin được sử dụng để:
                                 <ul>
@@ -55,6 +70,12 @@
                             </button>
                         </h2>
                         <div id="sec2-3" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+
+                            <button class="accordion-button collapsed" type="button">
+                                2.3. Cam kết bảo mật
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse">
                             <div class="accordion-body">
                                 Ban quản trị cam kết không cung cấp, mua bán hoặc trao đổi dữ liệu thành viên cho bất kỳ bên thứ ba nào ngoài phạm vi nhà trường nếu không có sự đồng ý của thành viên.
                             </div>

@@ -1,7 +1,6 @@
 <?php include 'header.php'; ?>
 <!-- Index Css -->
 <link href="css/index.css" rel="stylesheet">
-
 <!-- HERO SECTION -->
 <section class="hero text-center text-lg-start">
     <div class="container">
@@ -12,12 +11,12 @@
                 <p class="mb-5">Nền tảng giúp tối ưu hóa việc quản lý thành viên, tổ chức sự kiện và gắn kết cộng đồng sinh viên năng động.</p>
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                     <a href="#modules" class="btn btn-custom btn-primary-custom shadow-lg">Khám Phá Các Chức Năng</a>
+                    <a href="danhsachdki.php" class="btn btn-custom btn-outline-light">Sự Kiện Đang Mở</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <!-- MODULES PREVIEW SECTION (5 MỤC CHÍNH) -->
 <section id="modules" class="modules-section">
     <div class="container">
@@ -39,7 +38,6 @@
                     </div>
                 </a>
             </div>
-
             <!-- 2. Sự kiện -->
             <div class="col-lg-4 col-md-6">
                 <a href="danhsach_sukien.php" class="text-decoration-none text-dark">
@@ -52,41 +50,31 @@
                     </div>
                 </a>
             </div>
-
             <!-- 3. Đăng ký -->
             <div class="col-lg-4 col-md-6">
-                <div class="module-card">
-                    <div class="module-icon">
-                        <i class="bi bi-pencil-square"></i>
+                <a href="formdangki.php" class="text-decoration-none text-dark">
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+                        <h4>Đăng Ký Tham Gia</h4>
+                        <p class="text-muted small">Điền thông tin trực tiếp để đăng ký tham gia vào các hoạt động của CLB.</p>
                     </div>
-                    <h4>Đăng Ký Tham Gia</h4>
-                    <p class="text-muted small">Hệ thống ghi nhận và duyệt đơn đăng ký của sinh viên cho các sự kiện.</p>
-                </div>
+                </a>
             </div>
-
             <!-- 4. Tin tức -->
             <div class="col-lg-4 col-md-6">
-                <div class="module-card">
-                    <div class="module-icon">
-                        <i class="bi bi-newspaper"></i>
+                <a href="danhsach_tintuc.php" class="text-decoration-none text-dark">
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="bi bi-newspaper"></i>
+                        </div>
+                        <h4>Tin Tức CLB</h4>
+                        <p class="text-muted small">Cập nhật những hoạt động mới nhất và các bài viết chia sẻ từ ban chủ nhiệm.</p>
                     </div>
-                    <h4>Tin Tức CLB</h4>
-                    <p class="text-muted small">Cập nhật những hoạt động mới nhất và các bài viết chia sẻ từ ban chủ nhiệm.</p>
-                </div>
+                </a>
             </div>
-
-            <!-- 5. Phân quyền -->
-            <div class="col-lg-4 col-md-6">
-                <div class="module-card border-primary border-bottom">
-                    <div class="module-icon" style="background: rgba(76, 201, 240, 0.1); color: #4cc9f0;">
-                        <i class="bi bi-shield-lock-fill"></i>
-                    </div>
-                    <h4>Phân Quyền Hệ Thống</h4>
-                    <p class="text-muted small">Phân cấp vai trò quản lý giúp bảo mật thông tin và tối ưu hóa vận hành.</p>
-                </div>
-            </div>
-
-            <!-- 6. Thêm một cái nữa cho đủ lưới 6 cái -->
+            <!-- 6. Mở rộng hệ thống trong tương lai -->
             <div class="col-lg-4 col-md-6">
                 <div class="module-card border-dashed">
                     <div class="module-icon" style="background: #eee; color: #999;">
@@ -99,7 +87,6 @@
         </div>
     </div>
 </section>
-
 <!-- CALL TO ACTION -->
 <section class="py-5">
     <div class="container">
@@ -107,8 +94,8 @@
             <h2 class="fw-bold mb-4">Bạn Đã Sẵn Sàng Trải Nghiệm?</h2>
             <p class="mb-4 opacity-75">Tham gia cùng chúng tôi để xây dựng một môi trường sinh viên năng động hơn.</p>
             <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-info px-4 py-2 rounded-pill fw-bold">Tham Gia Ngay</button>
-                <button class="btn btn-outline-light px-4 py-2 rounded-pill">Liên Hệ Ban Quản Trị</button>
+                <a href="formdangki.php" class="btn btn-info px-4 py-2 rounded-pill fw-bold text-decoration-none">Tham Gia Ngay</a>
+                <a href="ho_tro.php" class="btn btn-outline-light px-4 py-2 rounded-pill">Liên Hệ Ban Quản Trị</a>
             </div>
         </div>
     </div>
